@@ -1,0 +1,566 @@
+body{
+    margin: 0px;
+    background-color: #FBEED7;
+}
+.theme{
+    background-image: url(https://cdn.glitch.global/f6011aa4-9d12-44a1-8aff-e9c8de9f304d/123.jpg?v=1647438173917);
+    background-size: cover;
+    height: 600px;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.heading{
+    margin-right: auto;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive;
+    color: #FFC300;
+}
+/* Делаем плавное подчеркивание элементов в меню */
+.item{
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+.item::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: width .7s;
+}
+.item:hover::after{
+    width: 100%;
+}
+/* надпись по центру */
+.tasty{
+    display: flex;
+    justify-content: center;
+}
+.make{
+    margin-top: 10%;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+}
+/* ДЕЛАЕМ КНОПКУ С ГРАДИЕНТОМ */
+.button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    align-items: center;
+}
+/*   display:inline-block;  - делаем из строчного элемента строчно-блочный */
+.btn{
+    display:inline-block;  
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    border: solid  1px #874356;
+    border-radius: 20px;
+    background-color: inherit;
+    font-family: 'Source Sans Pro', sans-serif;  
+    background-image: linear-gradient(45deg,#f79533, #f37055, #EF6D6D, #F2C9E1, #F68989, #EF6D6D,#E8FFC2);   
+    background-size: 200%; 
+       /* задаем больший размер в 200% чтобы анимация могла двигаться */
+    animation: animatebg 2s ease infinite paused;
+}
+/* устанавливаем для того чтобы анимация работала при наведении курсора */
+.btn:hover{
+    animation-play-state: running;
+}
+/* СОЗДАЕМ АНИМАЦИЮ С ПОМОЩЬЮ  @keyframes двигается от 0 о 100% и обратно */
+@keyframes animatebg {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
+/* Цитата */
+.phrase{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* блок с фото и описанием */
+
+
+.vegan{
+    display: flex;
+}
+.img3{
+    margin-left: 45px;
+    width: 400px;
+    box-shadow: 5px 5px 10px 5px #ccc;
+}
+.par0{
+    align-self: center;
+    font-family: 'Sansita Swashed', cursive;
+    margin-left: 20px;
+    font-size: 25px;
+    width: 650px;
+    color: #7E370C;
+    padding: 30px;
+}
+.par1{
+    align-self: center;
+    font-family: 'Sansita Swashed', cursive;
+    margin-left: 20px;
+    font-size: 25px;
+    width: 650px;
+    color: #7E370C;
+    padding: 30px;
+
+}
+.meat{
+    display: flex;
+    justify-content: flex-end;
+}
+.img4{
+    width: 400px;
+    margin-right: 45px;
+    box-shadow: 5px 5px 10px 5px #ccc;
+}
+.pasta{
+    display: flex;
+}
+.img5{
+    margin-left: 45px;
+    width: 400px;
+    box-shadow: 5px 5px 10px 5px #ccc;
+}
+.soup{
+    display: flex;
+    justify-content: flex-end;
+}
+.img6{
+    width: 400px;
+    margin-right: 45px;
+    box-shadow: 5px 5px 10px 5px #ccc;
+}
+
+/* блок кнопки переход в меню */
+.parag{
+    display: flex;
+    flex-direction: column;
+}
+.par3{
+    align-self: center;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0%;
+}
+
+/* вставляем видео */
+#myVideo{
+    width: 100%;
+}
+
+/* БЛОК about us */
+.colorp{
+    background-color: #FFFBE9;
+}
+.aboutus{
+    display: flex;
+    flex-direction: column;
+}
+.us{
+    align-self: center;
+    color: #7C3C21;
+    margin-top: 3%;
+    margin-bottom: 4%;
+}
+.ny{
+    align-self: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.paragr{
+    display: flex;
+    flex-direction: column;
+}
+.par4{
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px; 
+    letter-spacing: 2px;
+}
+/* блок команды  THE TEAM*/
+.komanda{
+    display: flex;
+    flex-direction: column;
+}
+.team{
+    margin-left: 45%;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #7C3C21;
+}
+.team2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.par2{
+    width: 270px;
+    text-align: justify;
+    font-size: 15px;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.work{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    margin:3%;
+    box-shadow: 10px 1px 10px 3px #ccc;
+}
+.position{
+    text-align: center;
+    color: #7E370C;
+    font-weight: bold;
+}
+
+/* БЛОК ОТЗЫВОВ */
+
+.review{
+    display: flex;
+    flex-direction: column;
+}
+.zagolovok-review{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #7E370C;
+    font-size: 25px;
+}
+
+/* заголовок */
+.four {
+    margin-top: 5%;
+    padding:20px;
+    text-align: center;
+} 
+  .four .restar {
+    font-family: 'Merriweather', serif;
+    position: relative;
+    color: #C44737;
+    font-size: 35px;
+    font-weight: normal;
+    padding: 8px 20px 7px 20px;
+    border-top: 4px solid;
+    border-left: 4px solid;
+    display: inline-block;
+    margin: 0;
+    line-height: 1;
+  }
+  .four .restar:before {
+    content: ""; 
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: -28px;
+    left: -28px;
+    border: 4px solid #C44737;
+    box-sizing: border-box;
+  }
+.Anastaisha{
+            text-align: center;
+            font-size: 12px;
+             text-decoration: none;
+            color: #070707;
+          }
+
+.Anas{display:flex; 
+justify-content: center;}
+
+  @media (max-width: 450px) {
+    .four .restar {font-size: 36px;}
+    .four .restar:before {
+      width: 20px;
+      height: 20px;
+      top: -20px;
+      left: -20px;
+    }
+  }
+
+  /* отзывы */
+.otziv{
+    display: flex;
+}
+.spisok-otziv{
+    margin: 10px;
+    padding: 20px;
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-shadow: 5px 5px 10px -2px #C44737;
+    color: #314E52;
+}
+.text2{
+    text-decoration: underline;
+    float: right;
+}
+/* последний блок на странице */
+.lastblok{
+    background-color: #EEEEEE ;
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    width: 100%;
+}
+.lasthead{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* ДЕЛАЕМ  красивые иконки  ДЛЯ СОЦ СЕТЕЙ */
+.icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #F0A500;
+    overflow: hidden;
+    position: relative;
+}
+.icon i{
+    line-height: 40px;
+    font-size: 20px;
+    transition: 0.2s linear;
+}
+.icon:hover i{
+    transform: scale(1.3);
+}
+
+
+/* next blok */
+.list{
+    padding: 5px;
+    list-style: none;
+}
+.item1{
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+.item1:hover{
+    color: #F0A500;
+}
+
+/* ДЛЕЛЕМ ПРИКОЛЬНУЮ КНОПКУ */
+.btn3{
+    width: 300px;
+    height: 50px;
+    background-color: #EEEEEE;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px inset black;
+    border-radius: 40px;
+    box-shadow: 10px 10px 15px #c7c4c4c4,
+                10px 10px 15px #FFB72B;
+}
+.btn3:active{
+    color: #F0A500;
+    font-weight: bold;
+    box-shadow: inset 10px 10px 15px #c7c4c4c4,
+                inset 10px 10px 15px #FFB72B;
+}
+.par8{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+.di{
+    text-align: center;
+    font-size: 12px;
+    height: 10px;
+}
+
+
+
+/* Размер: iPad  */
+@media all and (max-width: 800px) {
+    .make{
+        font-size: 65px;
+        margin-left: 30px;
+    }
+    .phrase{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        align-items: center;
+    }
+    .blok2{
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        margin-right: 50px;
+    }
+    .vegan, .meat,.soup,.pasta{
+        margin-bottom: 3%;
+        margin-top: 2%;
+    }
+    .img3{
+        width: 250px;
+    }
+    .par1{
+        font-size: 15px;
+    }
+    .img4 {
+        width: 240px;
+        height: 200px;
+    }
+    .img6{
+        width: 250px;
+    }
+    .par0{
+        margin-left: 30px;
+        font-size: 15px;
+    }
+    .img5{
+        width: 250px;
+    }
+    .button{
+        display: flex;
+        margin-top: 15px;
+        padding: 5px;
+        margin-right: 00px;
+    }
+    .team2{
+        padding: 3px;
+    }
+    .team{
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .btn3{
+        width: 150px;
+    }
+}
+
+@media all and (max-width: 500px){
+    .theme{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .tasty{
+        display: flex;
+        flex-direction: column;
+    }
+    .make{
+        font-size: 30px;
+        margin-top: -40px;
+        margin-left:0%;
+        padding: 17px;
+    }
+
+
+    .phrase{
+        font-size: 15px;
+        margin-left: 6px;
+    }
+
+    /* <!-- Блок 4 - картинки и надписи --> */
+
+    .vegan, .pasta{
+        display: flex;
+        flex-direction: column;
+    }
+    .meat{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .img4{
+        margin-left: 40px;
+    }
+    .par0{
+        width: 270px;
+        align-self: center;
+        margin: auto;
+    }
+    .par1{
+        width: 270px;
+        align-items: center;
+        margin: auto;
+    }
+    .soup{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .img6{
+        margin-left: 40px;
+    }
+
+    /* <!-- Блок 5- кнопка переход в меню --> */
+    .parag{
+        display: flex;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    /* БЛОК 6 about us */
+    .colorp{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        text-align: justify;
+        padding: 6px;
+    }
+
+    .team2{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 3px;
+        margin-left: 10px;
+    }
+    .lastblok{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 7px;
+        width: 100%;
+    }
+    .btn3{
+        width: 200px;
+    }
+
+    /* отзывы */
+    .otziv{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,256 @@
+/* ШАПКА СТРАНИЦЫ */
+body{
+    margin: 0px;
+    background-color: #FEFBF3;
+}
+.theme{
+    background-image: url(https://cdn.glitch.global/f6011aa4-9d12-44a1-8aff-e9c8de9f304d/job.jpg?v=1647441194258);
+    background-size: cover;
+    height: 300px;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+/* логотип LaLaood */
+.heading{
+    margin-right: auto;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive;
+    color: #FFC300;
+}
+/* Делаем плавное подчеркивание элементов в меню */
+.item{
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+.item::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: width .7s;
+}
+.item:hover::after{
+    width: 100%;
+}
+
+/* НАЗВАНИЕ РАЗДЕЛА */
+.gal{
+    display: flex;
+    flex-direction: column;
+}
+.head5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    align-self: center;
+    color: gray;
+}
+.head6{
+    font-size: 45px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #f17900e1;
+    align-self: center;
+    margin: 0%;
+}
+/* ДЕЛАЕМ СЛАЙД ИЗ ФОТО */
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    margin-top: 20px;
+    margin-bottom: 35px;
+    width: 100vh;
+    height: 100vh;
+    flex: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: flex 1s ease;
+    border: 1px white solid;
+}
+.image:hover{
+    flex: 8;
+}
+.image_1{
+    background-image: url(https://cdn.glitch.global/f6011aa4-9d12-44a1-8aff-e9c8de9f304d/6.jpg?v=1647441801563);
+}
+.image_2{
+    background-image: url(https://cdn.glitch.global/f6011aa4-9d12-44a1-8aff-e9c8de9f304d/5.jpg?v=1649172436860);
+}
+.image_3{
+    background-image: url(https://cdn.glitch.global/f6011aa4-9d12-44a1-8aff-e9c8de9f304d/7.jpg?v=1649172496240);
+}
+.image_4{
+    background-image: url(https://cdn.glitch.global/f6011aa4-9d12-44a1-8aff-e9c8de9f304d/8.jpg?v=1649172539959);
+}
+.image_5{
+    background-image: url(https://cdn.glitch.global/f6011aa4-9d12-44a1-8aff-e9c8de9f304d/2.jpg?v=1649172591483);
+}
+.image_6{
+    background-image: url(https://cdn.glitch.global/f6011aa4-9d12-44a1-8aff-e9c8de9f304d/3.jpg?v=1649172621175);
+}
+.image_7{
+    background-image: url(https://cdn.glitch.global/f6011aa4-9d12-44a1-8aff-e9c8de9f304d/1.jpg?v=1649172678449);
+}
+.image_8{
+    background-image: url(https://cdn.glitch.global/f6011aa4-9d12-44a1-8aff-e9c8de9f304d/4.jpg?v=1649172704603);
+}
+
+/* последний блок на странице */
+.lastblok{
+    background-color: #EEEEEE ;
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+}
+.lasthead{
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* ДЕЛАЕМ  красивые иконки  ДЛЯ СОЦ СЕТЕЙ */
+.icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #F0A500;
+    overflow: hidden;
+    position: relative;
+}
+.icon i{
+    line-height: 40px;
+    font-size: 20px;
+    transition: 0.2s linear;
+}
+.icon:hover i{
+    transform: scale(1.3);
+}
+
+.list{
+    padding: 5px;
+    list-style: none;
+}
+.item1{
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+.item1:hover{
+     color: #F0A500;
+}
+/* ДелаеМ ПРИКОЛЬНУЮ КНОПКУ */
+.btn3{
+    width: 300px;
+    height: 50px;
+    background-color: #EEEEEE;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px inset black;
+    border-radius: 40px;
+    box-shadow: 10px 10px 15px #c7c4c4c4,
+                10px 10px 15px #FFB72B;
+}
+.btn3:active{
+    color: #F0A500;
+    font-weight: bold;
+    box-shadow: inset 10px 10px 15px #c7c4c4c4,
+                        10px 10px 15px #FFB72B;;
+}
+.par8{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+.Anastaisha{
+            text-align: center;
+            font-size: 12px;
+             text-decoration: none;
+            color: #070707;
+          }
+
+.Anas{display:flex; 
+justify-content: center;}
+@media all and (max-width: 800px){
+    .gal{
+        display: flex;
+    }
+    .head5, .head6{
+        font-size: 25px;
+    }
+    .btn3{
+        width: 150px;
+    }
+  .image:hover{
+    flex: 35;
+   }
+}
+@media all and (max-width: 500px){
+    .theme{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .item{
+        margin-top: -2%;
+        padding: 10px;
+    }
+      .container{
+        width: 100vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+         margin-left: 20px;
+    }
+    .image{
+        width: 330px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        flex: 1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        transition: flex 1s ease;
+        border: 1px white solid;
+    }
+    .image:hover{
+        flex: 3;
+    }
+    .lastblok{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 7px;
+    }
+    .colorp{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .team{
+        display: flex;
+        font-size: 15px;
+    }
+    .btn3{
+        width: 200px;
+    }
+}
